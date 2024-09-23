@@ -1,0 +1,477 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+========================================
+Пользовательские стили
+========================================
+*/
+
+body {
+	color: #888;
+	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #2f5674;    /* если не подгрузится градиент ниже */
+	background: radial-gradient(#2f5674, #50756d);
+}
+
+/*
+========================================
+Сетка
+========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+/* Контейнер для всех элементов */
+
+.container {
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 960px;
+}
+
+/*
+========================================
+Типографика
+========================================
+*/
+
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+
+/* Цвет к заголовкам */
+
+h1, h2, h3, h4 {
+	color: #648880;
+}
+
+.group p {
+	text-align: right;
+}
+
+/* Размер шрифта к заголовкам */
+
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+cite, em {
+	font-style: italic;
+}
+
+/*
+========================================
+Кнопки
+========================================
+*/
+
+.btn {
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+.btn-alt {
+	border: 1px solid #fff;
+	padding: 10px 30px;
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
+}
+
+/*
+========================================
+Главная страница
+========================================
+*/
+
+.hero {
+	padding: 22px 80px 66px 80px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+}
+.hero h2 {
+	font-size: 36px;
+}
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+/*
+========================================
+Clearfix
+========================================
+*/
+
+.group::before,
+.group::after {
+	content: "";
+	display: table;
+}
+.group::after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*
+========================================
+Полосы
+========================================
+*/
+
+.row {
+	background: #fff;
+	min-width: 960px;
+	padding: 66px 0 44px 0;
+}
+
+/* Новая полоса для ленты ФОТО ТЕМ*/
+
+.row,
+.row-alt{
+min-width: 960px;
+}
+.row {
+background: #fff;
+padding: 66px 0 44px 0;
+}
+.row-alt {
+background: #cbe2c1;
+background: -webkit-linear-gradient(225deg, rgb(206, 224, 220) 27%, rgb(86, 181, 184) 100%);
+background: -moz-linear-gradient(225deg, rgb(206, 224, 220) 27%, rgb(86, 181, 184) 100%);
+background: linear-gradient(225deg, rgb(206, 224, 220) 27%, rgb(86, 181, 184) 100%);
+padding: 44px 0 22px 0;
+}
+
+/*
+========================================
+Основной заголовок
+========================================
+*/
+
+.logo {
+	float: left;  /* обтекание заголовка слева */
+}
+
+.logo {
+	border-top: 5px solid #648880;
+	float: left;
+	font-size: 35px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	line-height: 44px;
+	padding: 40px 0 22px 0;
+	text-transform: uppercase;
+}
+
+/* Цвет текста заголовка */
+
+/* Цвет текста подвала */
+
+.primary-header a {
+	color: #fff;
+}
+.primary-header a:hover {
+	color: #648880;
+}
+
+/*
+========================================
+Основной подвал
+========================================
+*/
+
+.primary-footer small {
+	float: left;
+}
+.primary-footer {
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+
+/* Цвет текста подвала */
+
+.primary-footer a {
+	color: #fff;
+}
+.primary-footer a:hover {
+	color: #648880;
+}
+
+/*
+========================================
+Создаем трехколоночный макет
+========================================
+*/
+
+.col-1-3 {
+	width: 33%;
+}
+col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* пространство между колонками, горизонтальное*/
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container,
+.grid {
+	margin: 0 auto;
+	width: 960px;
+}
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*
+========================================
+Ссылки
+========================================
+*/
+
+a:hover {
+	color: #a9b2b9;
+}
+a {
+	color: #648880;
+	text-decoration: none;   /* убираем подчеркивание */
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+
+/* этот класс надо включить на всех страницах */
+.tagline {
+	margin: 66px 0 22px 0;
+	text-align: right;
+}
+
+/* 
+========================================
+Навигация
+========================================
+*/
+
+.nav {
+	text-align: right;   /* сдвигаем вправо навигационное меню */
+}
+
+.primary-nav {
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+/* Преобразуем в горизонталь навигацию */
+
+
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
+}
+
+/* 
+========================================
+Подвал стиль текста
+========================================
+*/
+
+.primary-footer {
+	color: #648880;
+	font-size: 14px;
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+.primary-footer small {
+	float: left;
+	font-weight: 400;
+}
+
+/* ========================================
+Исправляем применённые общие правила, задаем цвет ссылок КОЛОНОК
+========================================
+*/
+
+.teaser a:hover h3 {
+	color: #a9b2b9
+}
+
+/*
+========================================
+Вступление ФОТО
+========================================
+*/
+
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
+}
+
+/*
+========================================
+Спикеры
+========================================
+*/
+
+.foto-info {
+	border-radius: 5px;
+	margin-top: 88px;
+	padding: 22px 0;
+	text-align: center;
+}
+.speaker {
+	margin-bottom: 44px;
+}
+
+.col-2-3 p {
+	width: 500px;    /* ширина описания */
+}
+
+/* ФОТО на главной странице */
+
+.teaser img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 100%
+}
+.teaser2 img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	width: 280px;
+	height: 185px;
+	border: solid 0.2px;
+}
+.teaser3 img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 94%;
+	border: solid 0.2px;
+}
+
+/* Фото в разделе ФОТО */
+
+.foto-info img {
+	height: 120px;
+	margin: -60px 0px 22px 0;
+	vertical-align: top;
+	-webkit-box-shadow: 8px 8px 15px 3px rgba(64, 150, 216, 0.24);
+	-moz-box-shadow: 8px 8px 15px 3px rgba(64, 150, 216, 0.24);
+	box-shadow: 8px 8px 15px 3px rgba(64, 150, 216, 0.24);
+}
+.increase img {
+	transition: 0.7s;
+}
+.increase:hover img {
+	transform: scale(3);
+}
