@@ -448,6 +448,7 @@ p a {
 	display: block;
 	margin-bottom: 22px;
 	max-width: 100%
+	border: solid 0.2px;
 }
 .teaser2 img {
 	border-radius: 5px;
