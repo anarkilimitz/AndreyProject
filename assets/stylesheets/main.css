@@ -397,7 +397,7 @@ p a {
 ========================================
 */
 
-.teaser a:hover h3 {
+.teaser, teaser2, teaser3 a:hover h3 {
 	color: #a9b2b9
 }
 
